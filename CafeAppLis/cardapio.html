@@ -1,32 +1,35 @@
+<!--Inicia-se do HTML5 com a tag DOCTYPE-->
 <!DOCTYPE html>
 <html>
-
+  
+<!--Aqui é onde começa a parte intendida pelo navegador web-->
 <head>
   <meta charset="UTF-8">
   <title>Cardápio</title>
 
   <!-- Bootstrap - CSS -->
-  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Este é o link que liga a algum arquvio de fora ou dentro da máquina-->
 
 </head>
 
-<body>
-  <header>
+<body> <!--É a parte visivel para o cliente-->
+  <header> <!--essa parte é o cabeçalho da página-->
+    
     <!-- Toolbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!--Presta para mostrar uma página e que vai conduzir para outras páginas.-->
+      <div class="container-fluid"> <!--gera uma caixa vazia no qual se coloca elementos no interior delas-->
+        <a class="navbar-brand" href="#"> <!--A classe <a> cria um link clicável para o usuário na página-->
           Coffee
-          <small>Arábica</small>
+          <small>Arábica</small> <!--reduz a letra para pequena-->
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span> <!--É um conteiner genérico-->
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarNav"> <!--A classe servepara dar uma característica especifica para algum elemento.-->
+          <ul class="navbar-nav"> <!--Produz uma lista desordenada-->
+            <li class="nav-item"> <!--Produz os elementows da lista-->
               <a class="nav-link" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
@@ -41,10 +44,10 @@
     </nav>
 
   </header>
-  <main>
-    <section class="my-3">
+  <main>  <!--Corpo "estrutura" da página html-->
+    <section class="my-3"> <!--produz uma seção genérica, sendo em grande parte em título -->
 
-      <!-- Grid -->
+      <!-- Grid -->   <!-- div uma grade que auxilia nas delimitações -->
       <div class="container">
 
         <!-- Button trigger modal -->
@@ -53,6 +56,7 @@
         </button>
 
         <!-- Modal -->
+        <!-- div que é a janela principal do modal -->
         <div class="modal fade" data-bs-keyboard="false" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -65,27 +69,30 @@
                 <h1>Conteúdo do modal</h1>
 
                 <!-- Formulário -->
-                <form id="foodForm">
+                <form id="foodForm"> <!--desenvolve um formulário vazio-->
                   <div class="mb-3">
                     <!-- Nome -->
-                    <label for="nome" class="form-label">Nome</label>
-                    <input type="text" name="nome" id="nome" class="form-control">
+                    <label for="nome" class="form-label">Nome</label>  <!--É onde produz uma legenda no item-->
+                    <input type="text" name="nome" id="nome" class="form-control"> <!--Aqui é onde o input interage com o cliente -->
                     <div id="nomeHelp" class="form-text">Adicione o nome do Alimento.</div>
                   </div>
 
                   <!-- Descrição -->
+                  <!-- div para delimitar elementos do formulário e posiciona-los de forma vertical e organizada -->
                   <div class="mb-3">
                     <label for="descricao" class="form-label">Descrição</label>
                     <input type="text" name="descricao" id="descricao" class="form-control">
                   </div>
 
                   <!-- Preço -->
+                  <!-- div que dispõe de delimitar os elementos do formulário e colocandos tanto na vertical como horizontal -->
                   <div class="mb-3">
                     <label for="preco" class="form-label">Preço</label>
                     <input type="text" name="preco" id="preco" class="form-control">
                   </div>
 
                   <!-- Imagem -->
+                  <!-- div pue dispõe de delimitar os elementos do formulário e colocandos na vertical -->
                   <div class="mb-3">
                     <label for="imagem" class="form-label">Imagem</label>
                     <input type="text" name="imagem" id="imagem" class="form-control">
@@ -108,6 +115,7 @@
         </div>
 
         <!-- Linha -->
+        <!-- Div que lista o cardápio. -->
         <div id="itens-cardapio" class="row">
 
           <!-- Colunas-->
